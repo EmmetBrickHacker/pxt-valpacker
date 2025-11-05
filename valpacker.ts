@@ -20,6 +20,8 @@ namespace ValPacker {
     //% pivot.defl=500
     //% weight=60
     export function pack(left: number, right: number, pivot?: number): number {
+        left  %= 1;  // ensuring that the input is an integer
+        right %= 1;  // ensuring that the input is an integer
         return ((left + pivot) * 1000) + (right + pivot);
     }
 
@@ -32,6 +34,7 @@ namespace ValPacker {
     //% pivot.defl=500
     //% weight=30 
     export function unpack(choice: Package, packed: number, pivot?: number): number {
+        packed %= 1;  //ensuring that the input is an integer
         if (choice == 0) {
             return Math.trunc(packed / 1000) - pivot;
         } else if (choice == 1) {
