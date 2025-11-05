@@ -21,7 +21,7 @@ namespace ValPacker {
     //% weight=60
     export function pack(left: number, right: number, pivot?: number): number {
         left  = Math.trunc(left);   // ensuring that the input is an integer
-        right = Math.trunc(rigth);  // ensuring that the input is an integer
+        right = Math.trunc(right);  // ensuring that the input is an integer
         return ((left + pivot) * 1000) + (right + pivot);
     }
 
