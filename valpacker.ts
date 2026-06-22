@@ -6,7 +6,7 @@ enum Package {
 }
 
 //% color="#123456" icon="\uf482"
-//% weight=96 //weight=97 is for Radio
+//% weight=94 //weight=96 is for Radio
 //% block="Value Packer"
 namespace ValPacker {
 
